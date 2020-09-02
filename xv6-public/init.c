@@ -26,7 +26,8 @@ main(void)
       printf(1, "init: fork failed\n");
       exit();
     }
-    if(pid == 0){
+    if(pid == 0){ 
+        printf(1,"Hola, amigo del diablo\n");
       exec("sh", argv);
       printf(1, "init: exec sh failed\n");
       exit();
